@@ -1,0 +1,15 @@
+.button_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border: 3px solid white;
+   
+
+
+}
+.Up{
+    background-image: url('../../assets/up.jpeg');
+    background-color: red;
+}
