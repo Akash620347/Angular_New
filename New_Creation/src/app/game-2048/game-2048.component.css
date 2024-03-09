@@ -1,9 +1,8 @@
 .table_board {
-    border: 2px solid white;
     color: white;
     display: inline-block;
     box-sizing: border-box;
-    background-color: bisque;
+    background-color: black;
     margin: 20px;
     padding: 20px;
     border-radius: 30px;

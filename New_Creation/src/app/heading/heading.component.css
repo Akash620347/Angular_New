@@ -23,3 +23,18 @@ td{
     justify-content: center; 
     align-items: center;
 }
+.header{
+    font-family: "Pacifico", cursive;
+    font-size: 35px;
+    text-decoration: underline;
+    text-shadow: 4px 4px 4px green;
+}
+.score_box{
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 3px;
+    padding: 3px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}

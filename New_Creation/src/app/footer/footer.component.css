@@ -1,0 +1,8 @@
+.footer_container{
+    display: flex;
+    justify-content: flex-end;
+    font-family: "Pacifico", cursive;
+    text-shadow: 3px 3px 3px red;
+    text-decoration: underline;
+    color: white;
+}
