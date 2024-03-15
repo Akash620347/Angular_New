@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './game-2048.component.css'
 })
 export class Game2048Component {
-
+  grid:number[][] = [];
+  
 }
