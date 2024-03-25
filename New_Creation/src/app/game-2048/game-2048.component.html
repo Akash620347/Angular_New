@@ -10,30 +10,11 @@
 <body>
         <div class="table_board">
             <table>
-                <tbody>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                <tbody>                    
+                    <tr *ngFor="let row of grid; let i = index">
+                        <td *ngFor="let column of row; let j = index">
+                            <p>{{column}}</p>
+                        </td>
                     </tr>
                 </tbody>
             </table>

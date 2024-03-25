@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-heading',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './heading.component.css'
 })
 export class HeadingComponent {
-
+  @Input() score:number = 0;
 }
