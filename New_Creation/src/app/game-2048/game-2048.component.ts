@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { animation, trigger, transition, style, animate } from '@angular/animations';
+import { trigger, transition, style, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-game-2048',
@@ -19,7 +19,7 @@ import { animation, trigger, transition, style, animate } from '@angular/animati
 })
 export class Game2048Component implements OnInit {
   score: number = 0;
-  grid: number[][] = [];
+  grid: any[][] = [];
   constructor() {}
 
   ngOnInit(): void {

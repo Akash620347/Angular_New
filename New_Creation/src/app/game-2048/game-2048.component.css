@@ -3,8 +3,6 @@
     display: inline-block;
     box-sizing: border-box;
     background-color: black;
-    margin: 20px;
-    padding: 20px;
     border-radius: 30px;
 
 }
@@ -12,9 +10,55 @@
 
 tbody>tr>td {
     border: 3px solid white;
-    width: 200px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 30px;
     text-align: center;
     font-size: 40px;
+}
+
+.button_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border-radius: 50px;
+
+}
+.middle{
+    display: flex;
+    gap: 70px;
+}
+.Up{
+    background-image: url('../../assets/up.jpeg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    width: 70px; 
+    height: 70px;
+}
+.Down{
+    background-image: url('../../assets/down.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    width: 70px; 
+    height: 70px;
+}
+.Left{
+    background-image: url('../../assets/left.jpeg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    width: 70px; 
+    height: 70px;
+}
+.Right{
+    background-image: url('../../assets/right.jpeg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    width: 70px; 
+    height: 70px;
 }
