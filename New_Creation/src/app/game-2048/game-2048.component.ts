@@ -47,5 +47,7 @@ export class Game2048Component implements OnInit {
     }
     this.position.forEach(pos=> this.grid[pos[0]][pos[1]] = 2)
   }
+
+  
   
 }
