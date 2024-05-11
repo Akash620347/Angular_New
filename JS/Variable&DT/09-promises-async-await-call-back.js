@@ -62,18 +62,73 @@ setTimeout(() =>{
 
 // to avoid callBack Hell we can use Promise
 
-function getData(getId, getNext){ 
+// function getData(getId, getNext){ 
+//     return new Promise ((resolve, reject) => {
+//         setTimeout(()=>{
+//             resolve("Successfully resolved")
+//             console.log("Data id is: ",getId);
+//             getNext();
+//         }, 5000)
+//     })
+// }
+// getData(123, ()=>{
+//     console.log("Goging for next....")
+//     getData(12131, ()=>{
+
+//     })
+// })
+
+
+// to work with .then() and .catch() method in Promise
+
+// basic Promise
+let basicPromise = () =>{
+    return new Promise((resolve, reject) =>{
+        console.log("In promise")
+        resolve("Successfully in resolve");
+    })
+}
+
+let promise = basicPromise()
+
+promise.then(()=>{
+console.log("After Successful promise")
+})
+promise.catch(() =>{
+console.log("After rejected promise")
+})
+
+
+// proxy chaining 
+
+function getData(getId){ 
     return new Promise ((resolve, reject) => {
         setTimeout(()=>{
             resolve("Successfully resolved")
-            console.log("Data id is: ",getId);
-            getNext();
-        }, 5000)
+            console.log("Data id is: ",getId)
+        }, 2000)
     })
 }
-getData(123, ()=>{
-    console.log("Goging for next....")
-    getData(12131, ()=>{
-
+// ****************ONE APPROACH********************
+// let p1 = new getData(1);
+// p1.then(()=>{
+//     console.log("Fetching for next.....")
+//     let p2 = new getData(2);
+//     p2.then(()=>{
+//     console.log("Fetching for next.....")
+//         let p3 = new getData(3);
+//         p3.then(()=>{
+//             console.log("Ended.....")
+//         })
+//     })
+// })
+// *****************2ND APPROACH****************
+getData(1).then(()=>{
+    console.log("Fetching for next.....")
+    getData(2).then(()=>{
+        console.log("Fetching for next.....")
+        getData(3).then(()=>{
+            console.log("Ended.....")
+        })
     })
 })
