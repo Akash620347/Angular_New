@@ -1,0 +1,10 @@
+<h1>{{title}}</h1>
+
+<!-- ******************FOR INPUT DECORATOR***************  -->
+<!-- <div class="container">
+  <button (click)="onClick()">Number</button>
+</div> -->
+<!-- <app-test-input [listOfItems]="rNumber"></app-test-input> -->
+<!--  ******************FOR OUTPUT DECORATOR **************************** -->
+<app-test-input (apiResponse)="receiveResponse($event)"></app-test-input>
+<p>API Response:--- {{responseCard | json}}</p>

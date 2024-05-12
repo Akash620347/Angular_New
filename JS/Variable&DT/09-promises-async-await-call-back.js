@@ -132,3 +132,27 @@ getData(1).then(()=>{
         })
     })
 })
+
+// doing same with async-await 
+console.log("Async-await functionality")
+// async function getDataWithId(){
+//     console.log("Waiting for record 1...")
+//     await getData(1);
+//     console.log("Waiting for record 2...")
+//     await getData(2);
+//     console.log("Waiting for record 3...")
+//     await getData(3);
+//     console.log("End ....")
+// } 
+(async function () {
+    console.log("Waiting for record 1...")
+    await getData(1);
+    console.log("Waiting for record 2...")
+    await getData(2);
+    console.log("Waiting for record 3...")
+    await getData(3);
+    console.log("End ....")
+})();
+
+
+
